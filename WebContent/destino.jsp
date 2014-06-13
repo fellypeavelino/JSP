@@ -11,6 +11,13 @@
 	<%
 		String nome = (String) request.getAttribute("nome");//pega variavel
 		out.println(nome);
+		out.println("<br/>");
+		HttpSession sesao = request.getSession();//session_start();
+		out.println(sesao.getAttribute("SESSION"));//session
+		//session.removeAttribute("infomsg"); destroi session
+		out.println("<br/>");
+		out.println(application.getAttribute("nomeGlobal"));//outra forma de session
 	%>
 </body>
 </html>
+<!--http://www.caelum.com.br/apostila-java-web/apendice-topicos-da-servlet-api/#19-9-o-servletcontext-e-o-escopo-de-aplicacao-->
