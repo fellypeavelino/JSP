@@ -1,0 +1,2 @@
+em WEB-INF estão os arquivos que não podem ser acessados pelo usuario na url
+em lib pde ser colocado direto o driver de banco

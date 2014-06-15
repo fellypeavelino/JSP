@@ -10,6 +10,7 @@
 	<body> 
 		<form action='Ola' method='post'> 
 		<!--
+			<form action='/jspteste2/test/' method='post'> 
 		 	action= para classe servelet 
 		 -->>
 			Nome.: <input type='text' name='nome' /> 

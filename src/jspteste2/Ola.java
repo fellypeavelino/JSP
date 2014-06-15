@@ -39,12 +39,21 @@ public class Ola extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String nome = request.getParameter("nome"); 
+		String nome = request.getParameter("nome");
+		/*ou*/
+		 Object objNome = request.getParameter("nome");
+		 String Nome = (String) objNome;
+		 //exception Handling
+		 if(Nome.equals("ServeletException")){
+			 throw new ServletException("ServletException erro");
+		 }
 		String sobrenome = request.getParameter("sobrenome"); 
 		//response.setContentType("text/html"); 
 		//PrintWriter out = response.getWriter(); 
 		//out.println("Bem Vindo<h3>"+nome+" " +sobrenome+"</h3>"); out.close();
-		/* header(Locaton)*/
+		/* header(Locaton)
+		 * 
+		 * */
 		RequestDispatcher rd = request.getRequestDispatcher("destino.jsp");
 		request.setAttribute("nome",nome);//lança variavel
 		HttpSession session = request.getSession(); //session_start()

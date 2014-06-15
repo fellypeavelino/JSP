@@ -8,4 +8,21 @@
     <welcome-file>index.html</welcome-file>
     <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
+	
+  <!-- 
+  nome da classe principal
+   -->
+  <servlet>
+    <servlet-name>HelloWord</servlet-name>
+    <servlet-class>jspteste2.Ola</servlet-class>
+</servlet>
+<!--
+	mapping
+	url amigavel redirecionando para classe principal
+-->
+<servlet-mapping>
+    <servlet-name>HelloWord</servlet-name>
+    <url-pattern>/test/</url-pattern>   
+</servlet-mapping>
+
 </web-app>
